@@ -1,28 +1,29 @@
 # Adonis API application
+API utilizando Adonis com os métodos de login, cadastro e me. Métodos login e register retornam token JWT. Enviar o token como Bearer no header.
 
-This is the boilerplate for creating an API server in AdonisJs, it comes pre-configured with.
-
-1. Bodyparser
-2. Authentication
-3. CORS
-4. Lucid ORM
-5. Migrations and seeds
-
-## Setup
-
-Use the adonis command to install the blueprint
-
+## Clone o projeto
 ```bash
-adonis new yardstick --api-only
+git clone git@github.com:robertolima-dev/adonis-api.git
 ```
 
-or manually clone the repo and then run `npm install`.
-
-
-### Migrations
-
-Run the following command to run startup migrations.
-
-```js
-adonis migration:run
+## Variáveis de ambiente
+```bash
+$ cd adonis-api
 ```
+```bash
+$ vim .env
+```
+
+Copie o conteúdo do arquivo .env.example e verifique quais são os valores das seguintes variáveis (APP_KEY, DB_USER, DB_PASSWORD).
+
+## Iniciando o projeto
+```bash
+$ npm install
+```
+```bash
+$ npm run start:dev
+```
+
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
+
